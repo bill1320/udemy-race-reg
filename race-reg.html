@@ -10,24 +10,50 @@
     <!-- had to google how to make only one radio button select; same name  -->
     <form action="register">
       <h1>Race Registration!</h1>
+
       <label for="firstname">First Name</label>
       <input type="text" name="firstname" id="firstname" required />
+
       <label for="lastname">Last Name</label>
       <input type="text" name="lastname" id="lastname" required />
+
       <p>Select a Race:</p>
-      <input type="radio" name="type" id="fun" />
+
+      <input type="radio" name="type" id="fun" required />
       <label for="fun">Fun Run 5k</label>
+
       <br />
-      <input type="radio" name="type" id="half" />
+
+      <input type="radio" name="type" id="half" required />
       <label for="half">Half Marathon</label>
+
       <br />
-      <input type="radio" name="type" id="full" />
+
+      <input type="radio" name="type" id="full" required />
       <label for="full">Full Marathon</label>
+
       <br />
+
       <label for="email">Email</label>
       <input type="email" name="email" id="email" required />
+
       <label for="password">Password</label>
       <input type="password" name="password" id="password" required />
+
+      <br />
+
+      <label for="age">Select Age Group</label>
+
+      <select name="age" id="age" required>
+        <option value="18-30">18-30</option>
+        <option value="31-49">30-49</option>
+        <option value="50-65">50-65</option>
+        <option value="66=">66+</option>
+      </select>
+
+      <br />
+
+      <button>Register!</button>
     </form>
   </body>
 </html>
